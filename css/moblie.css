@@ -1,0 +1,59 @@
+.navbar{
+    border-radius: 4px;
+}
+.nv_cont>.nv_header{
+    margin-right: 0;
+    margin-left: 0;
+}
+.nv_header{
+    float: left;
+}
+.nv_toggle{
+    display: none;
+}
+.nv_link{
+    margin-left: -15px;
+}
+.nv_cont>.nv_apse{
+    margin-right: 0;
+    margin-left: 0;
+}
+.nv_apse.nv_coll{
+    display: block;
+    height: auto;
+    padding-bottom: 0;
+    overflow: hidden;
+    visibility: visible!important;
+}
+.nv_apse{
+    width: auto;
+    border-top: 0;
+    box-shadow: none;
+}
+.nv_right{
+    float: right;
+    margin-right: -15px;
+}
+.nv_bar{
+    margin: 0;
+}
+.nv_bar>li{
+    float: left;
+}
+.lu_indicators{
+    bottom: 20px;
+}
+.sc_col{
+    width: 42%;
+    float: left;
+}
+.sc_col7{
+    width: 58%;
+    float: left;
+}
+.fr_cont{
+    width: 750px;
+}
+/* .nv_cont{
+    width: 750px;
+} */

@@ -1,0 +1,344 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;  
+}
+ul,ol{
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.clearfix::before{
+    clear: both;
+}
+.sc_row::before{
+    clear: both;
+}
+.navbar{
+    background-color: #fff;
+    margin-bottom: 0;
+    position: relative;
+    min-height: 50px;
+    border: 1px solid transparent;
+}
+.navbar::before,.nv_cont::before{
+    display: table;
+    content: ""
+}
+.nv_cont{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.nv_defalt .nv_toggle{
+    border-color: #ddd;
+}
+.nv_toggle{
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.nv_defalt .nv_link{
+    color: #777;
+}
+.nv_link{
+    padding: 10px;
+    float: left;
+    height: 50px;
+    font-size: 18px;
+    line-height: 20px;
+}
+.nv_link>img{
+    display: block;
+}
+.nv_defalt .nv_coll{
+    border-color: #e7e7e7;
+}
+.nv_apse{
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.nv_nav{
+    padding: 10px;
+}
+.nav>li{
+    position: relative;
+    display: block;
+}
+.nv_defalt .nv_bar>.active>a{
+    color: #fff;
+    background: #2c77de;
+}
+.nv_nav li a{
+    padding: 15px 25px;
+    font-size: 15px;
+}
+.nv_nav>li>a{
+    position: relative;
+    display: block;
+}
+.nv_coll{
+    display: none;
+    visibility: hidden;
+}
+/* 轮播图 */
+.lunbotu{
+    position: relative;
+}
+.lu_indicators{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    z-index: 15;
+    width: 60%;
+    padding-left: 0;
+    margin-left: -30%;
+    text-align: center;
+    list-style: none;
+}
+.lu_indicators .active{
+    width: 12px;
+    height: 12px;
+    margin: 0;
+    background-color: #fff;
+}
+.lu_indicators li{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 1px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+.lu_inner{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    /* height: 292px; */
+}
+.lu_inner>.lu_item{
+    position: relative;
+    display: none;
+}
+.lu_inner>.active{
+    display: block;
+}
+.lu_inner>.lu_item>img{
+    line-height: 1;
+    display: block;
+    max-width: 100%;
+    /* height: auto; */
+    /* height: 292px; */
+}
+.sec{
+    padding: 50px 0;
+}
+.sc_row{
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.sc_col{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.sc_online>div{
+    background-color: red;
+}
+.sc_title>div p{
+    line-height: 60px;
+    font-size: 18px;
+    color: #fff;
+    margin: 0;
+    padding-left: 40px;
+    position: relative;
+}
+/* .sc_title>div p::before{
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    content: "";
+    position: absolute;
+    left: 15px;
+    top: 25px;
+} */
+.sc_gly{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+}
+.sc_online ul{
+    background-color: #fff;
+}
+.sc_online ul li{
+    float: left;
+    width: 49.8%;
+}
+.sc_online ul li a{
+    display: inline-block;
+    font-size: 15px;
+    color: #666;
+    border: 1px solid #d1d1d1;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #e5e5e5;
+}
+.sc_service>div{
+    background: blue;
+}
+.sc_service ul li{
+    width: 49.8%;
+    float: left;
+}
+.sc_service ul li a{
+    display: inline-block;
+    height: 60px;
+    line-height: 60px;
+    width: 100%;
+    color: #666;
+    text-align: center;
+    border: 1px solid #d1d1d1;
+    border-top: none;
+    background-color: #e5e5e5;
+}
+.sc_service ul li a span{
+    font-size: 15px;
+    padding-left: 5px;
+}
+.sc_col7{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.sc_quick li{
+    float: left;
+    width: 33%;
+    padding: 5px;
+}
+.sc_quick li a{
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+}
+.sc_yf a{
+    background-color: #EC6100;
+}
+.sc_quick li img{
+    float: left;
+    padding-right: 10px;
+}
+.sc_quick li div span{
+    font-size: 18px;
+    display: inline-block;
+    padding: 15px 0px;
+}
+.sc_wd a{
+    background-color: #2C77DE;
+}
+.sc_jj a{
+    background-color: #CF2F04;
+}
+/* 新闻资讯 */
+.news{
+    padding: 10px;
+}
+.ns_type{
+    line-height: 40px;
+    height: 40px;
+}
+.ns_type ul{
+    margin: 0;
+    border-bottom: 1px solid #ccc;
+}
+.ns_type ul li{
+    float: left;
+    padding: 0 15px;
+    background-color: #CF2F04;
+    font-size: 15px;
+    color: #fff;
+}
+.ns_more{
+    background-color: transparent !important;
+    float: right !important;
+
+}
+.ns_more a{
+    color: #888;
+    font-size: 14px;
+    display: inline-block;
+}
+.ns_list{
+    margin: 0;
+    padding-bottom: 22px;
+    background-color: #fff;
+    padding: 20px 10px 10px;
+    border-top: 1px solid #fff;
+    border: 1px solid #d1d1d1;
+}
+.ns_list li{
+    border-bottom: 1px dashed #ccc;
+}
+.ns_list li a{
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0;
+}
+.ns_list li span{
+    float: right;
+    color: #888;
+}
+.ns_list li p{
+    margin-right: 120px;
+    margin-bottom: 0;
+    color: #666;
+    overflow: hidden;
+}
+/* 底部 */
+footer{
+    padding: 20px 0 10px;
+    text-align: center;
+    display: block;
+}
+.fr_cont{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.fr_nav{
+    display: inline-block;
+}
+.fr_nav li{
+    float: left;
+}
+.fr_nav li a{
+    display: inline-block;
+    padding: 10px 20px;
+    color: #888;
+}
+footer p{
+    color: #666;
+}
+p{
+    margin: 0 0 10px;
+}
+footer p a{
+    color: #666;
+}
